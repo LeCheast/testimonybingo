@@ -29,8 +29,42 @@ textarea {
 }
 
     .navbar-inverse .navbar-brand {
-        color:white;
+        color: white;
     }
+
     .navbar-inverse .navbar-nav > li > a {
         color: white;
     }
+
+thead {
+    text-align: center;
+}
+
+/*table {
+    width: 100%;
+}
+
+@media (max-width: 480px){
+    input{
+        max-width: 64px;
+    }
+}*/
+
+.col-xs-12 input {
+    width: 100%;
+    height: 40px;
+    text-align: center;
+}
+
+#resetbtn a {
+    color: white;
+}
+
+.form-control[readonly] {
+    background-color: white;
+    cursor: default;
+}
+
+.test {
+
+}

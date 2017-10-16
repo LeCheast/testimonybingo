@@ -2,3 +2,103 @@
     ViewBag.Title = "Testimony Bingo";
 }
 
+<div class="col-xs-12">
+    <h1>Testimony Bingo</h1>
+    <hr />
+    <div>
+        <button class="btn btn-success" id="donebtn">Done</button>
+        <button class="btn btn-danger" id="resetbtn">@Html.ActionLink("Clear Board", "Index", "Home")</button>
+    </div>
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <td></td>
+                    <td>B</td>
+                    <td>I</td>
+                    <td>N</td>
+                    <td>G</td>
+                    <td>O</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>B</td>
+                    <td><input type="text" class="inputtext form-control" id="textinput1" onclick="changebackground(this)"/></td>
+                    <td><input type="text" class="inputtext form-control" id="textinput2" onclick="changebackground(this)"/></td>
+                    <td><input type="text" class="inputtext form-control" id="textinput3" onclick="changebackground(this)"/></td>
+                    <td><input type="text" class="inputtext form-control" id="textinput4" onclick="changebackground(this)"/></td>
+                    <td><input type="text" class="inputtext form-control" id="textinput5" onclick="changebackground(this)"/></td>
+                </tr>                      
+                <tr>                      
+                    <td>I</td>            
+                    <td><input type="text" class="inputtext form-control" id="textinput6" onclick="changebackground(this)"/></td>
+                    <td><input type="text" class="inputtext form-control" id="textinput7" onclick="changebackground(this)"/></td>
+                    <td><input type="text" class="inputtext form-control" id="textinput8" onclick="changebackground(this)"/></td>
+                    <td><input type="text" class="inputtext form-control" id="textinput9" onclick="changebackground(this)"/></td>
+                    <td><input type="text" class="inputtext form-control" id="textinput10" onclick="changebackground(this)"/></td>
+                </tr>                      
+                <tr>                      
+                    <td>N</td>            
+                    <td><input type="text" class="inputtext form-control" id="textinput11" onclick="changebackground(this)"/></td>
+                    <td><input type="text" class="inputtext form-control" id="textinput12" onclick="changebackground(this)"/></td>
+                    <td><input type="text" class="form-control" style="background-color: red; color: white;" value="FREE!" disabled/></td>
+                    <td><input type="text" class="inputtext form-control" id="textinput13" onclick="changebackground(this)"/></td>
+                    <td><input type="text" class="inputtext form-control" id="textinput14" onclick="changebackground(this)"/></td>
+                </tr>                     
+                <tr>                       
+                    <td>G</td>             
+                    <td><input type="text" class="inputtext form-control" id="textinput15" onclick="changebackground(this)"/></td>
+                    <td><input type="text" class="inputtext form-control" id="textinput16" onclick="changebackground(this)"/></td>
+                    <td><input type="text" class="inputtext form-control" id="textinput17" onclick="changebackground(this)"/></td>
+                    <td><input type="text" class="inputtext form-control" id="textinput18" onclick="changebackground(this)"/></td>
+                    <td><input type="text" class="inputtext form-control" id="textinput19" onclick="changebackground(this)"/></td>
+                </tr>                      
+                <tr>                       
+                    <td>O</td>             
+                    <td><input type="text" class="inputtext form-control" id="textinput20" onclick="changebackground(this)"/></td>
+                    <td><input type="text" class="inputtext form-control" id="textinput21" onclick="changebackground(this)"/></td>
+                    <td><input type="text" class="inputtext form-control" id="textinput22" onclick="changebackground(this)"/></td>
+                    <td><input type="text" class="inputtext form-control" id="textinput23" onclick="changebackground(this)"/></td>
+                    <td><input type="text" class="inputtext form-control" id="textinput24" onclick="changebackground(this)"/></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $("#donebtn").click(function () {
+            donebtnclick();
+        });
+
+        $(".test").click(function () {
+            changebackground();
+        });
+    });
+
+    function donebtnclick() {
+        if ($("#donebtn").text() == "Done") {
+            $(".inputtext").prop('readonly', true);
+            $("#donebtn").text("Edit");
+
+        }
+        else if ($("#donebtn").text() == "Edit") {
+            $(".inputtext").prop('readonly', false);
+            $("#donebtn").text("Done")
+        }
+    }
+
+    function changebackground(e) {
+        var getthevalue = $(e).attr('id');
+        if ($("#donebtn").text() == "Edit" && $("#" + getthevalue).css("background-color", "white")) {
+            $("#" + getthevalue).css("background-color", "red");
+            $("#" + getthevalue).css("color", "white");
+        }
+        else {
+            $("#" + getthevalue).css("background-color", "white");
+            $("#" + getthevalue).css("color", "black");
+        }
+    }
+</script>

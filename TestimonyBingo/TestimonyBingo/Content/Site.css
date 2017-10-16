@@ -1,6 +1,4 @@
 ﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -23,6 +21,13 @@ textarea {
     max-width: 280px;
 }
 
+footer {
+    background-color: #F1F1F3;
+    color: #333333;
+    padding-top: 20px;
+}
+
+
 .navbar-inverse {
     background-color: #3c4d71;
     color: white !important;
@@ -40,31 +45,32 @@ thead {
     text-align: center;
 }
 
-/*table {
-    width: 100%;
-}
-
-@media (max-width: 480px){
-    input{
-        max-width: 64px;
-    }
-}*/
-
 .col-xs-12 input {
     width: 100%;
     height: 40px;
     text-align: center;
 }
 
-#resetbtn a {
-    color: white;
-}
 
 .form-control[readonly] {
     background-color: white;
     cursor: default;
 }
 
-.test {
+#resetbtn a {
+    color: white;
+}
 
+#hints {
+    padding-top:10px;
+    color:lightgray;
+}
+
+@media (max-width: 430px) {
+    .ads {
+        display: block !important;
+        margin: 0 auto !important;
+        width: 60% !important;
+        padding-bottom: 10px;
+    }
 }

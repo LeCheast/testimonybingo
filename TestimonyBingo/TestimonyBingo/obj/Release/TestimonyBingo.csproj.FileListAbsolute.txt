@@ -87,3 +87,4 @@ C:\Users\Travis Kingery\Documents\GitHub\testimonybingo\TestimonyBingo\Testimony
 C:\Users\Travis Kingery\Documents\GitHub\testimonybingo\TestimonyBingo\TestimonyBingo\obj\Release\TestimonyBingo.csproj.CoreCompileInputs.cache
 C:\Users\Travis Kingery\Documents\GitHub\testimonybingo\TestimonyBingo\TestimonyBingo\obj\Release\TestimonyBingo.dll
 C:\Users\Travis Kingery\Documents\GitHub\testimonybingo\TestimonyBingo\TestimonyBingo\obj\Release\TestimonyBingo.pdb
+C:\Users\Travis Kingery\Documents\GitHub\testimonybingo\TestimonyBingo\TestimonyBingo\obj\Release\TestimonyBingo.csprojResolveAssemblyReference.cache

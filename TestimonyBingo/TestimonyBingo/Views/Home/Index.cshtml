@@ -3,9 +3,9 @@
 }
 
 <div class="col-xs-12">
-    <h1>Testimony Bingo</h1>
+    @*<h1>Testimony Bingo</h1>*@
     <hr />
-    <div>
+    <div style="padding-bottom:10px;">
         <button class="btn btn-success" id="donebtn">Done</button>
         <button class="btn btn-danger" id="resetbtn">@Html.ActionLink("Clear Board", "Index", "Home")</button>
     </div>
@@ -64,6 +64,9 @@
                 </tr>
             </tbody>
         </table>
+    </div>
+    <div>
+        <p id="hints"><em>*To deselect a cell press edit and click on the cell</em></p>
     </div>
 </div>
 

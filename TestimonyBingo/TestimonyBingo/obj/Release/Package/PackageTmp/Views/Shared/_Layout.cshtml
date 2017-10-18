@@ -10,31 +10,36 @@
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar navbar-inverse">
         <div class="container">
             <div class="navbar-header">
                 @*<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>*@
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>*@
                 @Html.ActionLink("Testimony Bingo", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             @*<div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                </ul>
-            </div>*@
+                    <ul class="nav navbar-nav">
+                        <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                        <li>@Html.ActionLink("About", "About", "Home")</li>
+                        <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    </ul>
+                </div>*@
         </div>
     </div>
     <div class="container body-content">
         @RenderBody()
-        @*<hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>*@
+        <hr />
+    </div>
+    <div style="background-color:#F1F1F3; height: 400px;">
+        <footer class="container" style="background-color:#F1F1F3;">
+            <p>Other references:</p>
+            <a href="https://www.mormonchannel.org/" target="_blank"><img class="ads col-xs-12 col-sm-4" src="http://channels.roku.com/images/27d1dba66f1d415da5b6996d5c17462c-hd.jpg" /></a>
+            <a href="https://www.mormon.org/" target="_blank"><img class="ads col-xs-12 col-sm-4" src="https://pbs.twimg.com/profile_images/854035172257218560/WSYS7Vaw.jpg" /></a>
+            <a href="https://www.lds.org/" target="_blank"><img class="ads col-xs-12 col-sm-4" src="http://www.crsingles.org/LDS%20Church.jpg" /></a>
+        </footer>
     </div>
 
     @Scripts.Render("~/bundles/jquery")

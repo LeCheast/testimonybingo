@@ -79,12 +79,3 @@ thead {
         padding-bottom: 10px;
     }
 }
-
-@media (orientation : landscape) {
-    .ads {
-        display: block !important;
-        margin: 0 auto !important;
-        width: 60% !important;
-        padding-bottom: 10px;
-    }
-}

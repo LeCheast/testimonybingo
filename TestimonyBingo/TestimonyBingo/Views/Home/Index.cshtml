@@ -65,9 +65,6 @@
             </tbody>
         </table>
     </div>
-    <div>
-        <p id="hints"><em>*To deselect a cell press edit and click on the cell</em></p>
-    </div>
 </div>
 
 <script>
@@ -95,7 +92,8 @@
 
     function changebackground(e) {
         var getthevalue = $(e).attr('id');
-        if ($("#donebtn").text() == "Edit" && $("#" + getthevalue).css("background-color", "white")) {
+        console.log($(getthevalue).css('background-color'));
+        if ($("#donebtn").text() == "Edit" && $("#" + getthevalue).css("background-color") == 'rgb(255, 255, 255)') {
             $("#" + getthevalue).css("background-color", "red");
             $("#" + getthevalue).css("color", "white");
         }
